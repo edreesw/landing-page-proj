@@ -3,12 +3,112 @@
     <head>
         <title>Landing Page Project</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <header>Header</header>
+        <header>
+            <div class="inner-container">
+                <div class="header-cont">
+                    <a class="header-logo-link" href="./index.html">Pokémon!</a>
 
-        <div class="body">Body</div>
+                    <ul>
+                        <li><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Red_and_Blue_Versions">Red</a></li>
+                        <li><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Red_and_Blue_Versions">Blue</a></li>
+                        <li><a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Yellow_Version">Yellow</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </header>
 
-        <footer>Footer</footer>
+        <div class="main">
+            <div class="hero main-section">
+                <div class="inner-container">
+                    <div class="hero-module">
+
+                        <div class="hero-text">
+                            <h2>Start Your Pokémon Adventure!</h2>
+
+                            <p>Wanna be the very best? Like no one ever was? Feel like catching them is your test and that training them is your cause? Then you're on the right page!</p>
+
+                            <button type="button">Sign Up!</button>
+                            <!-- TODO: you just started planning out this section, you need to style it (flex row?) and add 
+                                the image. don't forget about the inner containers, you need to make proper side margins for
+                                 them. Also maybe consider combining/adding the inner-container class to the module class?-->
+                        </div>
+
+                        <div class="hero-img">
+                            <img src="./images/pokemonlogo.png"> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info main-section">
+                <div class="inner-container">
+                    <div class="info-module">
+                        <div class="info-text">Choose Your Starter!</div>
+
+                        <div class="info-pictures-container">
+                            <div class="info-picture-cont">
+                                <img src="./images/001.png" alt="">
+                                <div class="info-picture-text">Bulbasaur</div>
+                            </div>
+
+                            <div class="info-picture-cont">
+                                <img src="./images/004.png" alt="">
+                                <div class="info-picture-text">Charmander</div>
+                            </div>
+
+                            <div class="info-picture-cont">
+                                <img src="./images/007.png" alt="">
+                                <div class="info-picture-text">Squirtle</div>
+                            </div>
+
+                            <div class="info-picture-cont">
+                                <img src="./images/025.png" alt="">
+                                <div class="info-picture-text">Pikachu</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quote main-section">
+                <div class="inner-container">
+                    <div class="quote-container">
+                        <div class="quote-text">
+                            “I see now that the circumstances of one's birth are irrelevent, it is what you do with the gift of life that determines who you are.”
+                        </div>
+
+                        <div class="quote-name">- Mewtwo</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta main-section">
+                <div class="inner-container">
+                    <div class="cta-container">
+                        <div class="cta-text-cont">
+                            <h3>Ready to become a Pokémon Master?</h3>
+                            <p>Click here to begin your journey to be the very best, like no one ever was!</p>
+                        </div>
+
+                        <button type="button" class="cta-button">Sign Up!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="inner-container">
+                <div class="footer-container">
+                    <p class="footer-text">Gotta Catch 'Em All!</p>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

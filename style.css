@@ -1,5 +1,14 @@
-html {
+* {
     box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.inner-container {
+    width: 70%;
+    margin: auto; 
+    padding: 16px; 
 }
 
 body {
@@ -8,12 +17,230 @@ body {
     min-height: 100vh;
 }
 
-.body {
-    border: 2px solid red;
+.main {
+    /*border: 2px solid red; */
     flex: 1; 
+    display: flex; 
+    flex-direction: column;
 }
 
+
+.main-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+/********* header stuff **/ 
+
+/*
 header, footer {
     border: 2px solid blue;
 
 }
+*/
+
+header, .hero, footer {
+    background-color: #1f2937;;
+}
+
+.header-cont {
+    display: flex; 
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    display: flex; 
+    gap: 10px; 
+    
+}
+
+li a {
+    text-decoration: none;
+    color: #f9faf8;
+}
+
+.header-logo-link {
+    text-decoration: none;
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+/********* Hero section **/ 
+
+.hero-module {
+    display: flex;
+    gap: 20px; 
+    align-items: center;
+
+    padding-top: 72px;
+    padding-bottom: 72px;
+    
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+    .info-pictures-container, .cta-container {
+      flex-direction: column;
+    }
+
+    .hero-module {
+        flex-direction: column-reverse;
+    }
+  }
+
+.hero-text button {
+    background-color: teal; 
+    padding: 8px 24px; 
+    border-radius: 8px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #f9faf8;
+}
+
+.hero-text * {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: bolder;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #e5e7eb
+}
+
+.hero-img img {
+    display: block; 
+    width: 100%;
+    height: auto; 
+}
+
+/********* Info module */ 
+.info-module {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; 
+}
+
+.info-text {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+
+.info-pictures-container {
+    display: flex; 
+    justify-content: space-evenly;
+    gap: 20px; 
+}
+
+.info-picture-cont {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+}
+.info-picture-cont img {
+    display: block; 
+    width: 100%;
+    height: auto;
+    border: teal; 
+    border-radius: 8px;
+
+    border: 2px solid teal;
+    border-radius: 8px;
+}
+
+
+/******** quote section **/ 
+.quote {
+    background-color: #e5e7eb;
+
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+
+.quote-container {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    padding:36px;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    opacity: 60%;
+}
+
+.quote-name {
+    align-self: flex-end;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+
+/********* cta section **/ 
+.cta {
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+.cta-container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: teal;
+    border-radius: 8px;
+    gap: 20px; 
+    padding: 48px 24px;
+}
+
+.cta-text-cont {
+    display: flex; 
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.cta-text-cont h3 {
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight: bold;
+}
+
+.cta-text-cont p {
+    font-size: 16px;
+    color: #e5e7eb;
+}
+
+.cta-button {
+    background-color: teal;
+    padding:8px 48px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f9faf8;
+    border-radius: 8px;
+    border: 2px #f9faf8 solid; 
+}
+
+
+/******** footer **/ 
+.footer-container {
+    display: flex; 
+    justify-content: center;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.footer-text {
+    font-size: 16px;
+    color: #e5e7eb;
+}
+
